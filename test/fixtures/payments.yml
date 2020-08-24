@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loan: one
+  status: 0
+  note: MyText
+  principal_amount: 67.11
+  interest_amount: 12.89
+
+two:
+  loan: two
+  status: 0
+  note: MyText
+  principal_amount: 65.45
+  interest_amount: 15.55
