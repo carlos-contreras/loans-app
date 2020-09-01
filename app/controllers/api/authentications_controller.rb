@@ -1,8 +1,8 @@
 module Api
-  class AuthenticationController < ApiController
+  class AuthenticationsController < ApiController
     skip_before_action :authenticate_request
 
-    def authenticate
+    def create
       command = AuthenticateUser.new(params[:email], params[:password]).call
 
       if command.success?
