@@ -2,11 +2,17 @@
 <html>
   <head>
     <title>LoansApp</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= yield :javascript %>
+
+    <%= javascript_pack_tag 'spa' %>
   </head>
 
   <body>
