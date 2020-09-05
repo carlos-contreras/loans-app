@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '/api/ping', to: 'api#ping', as: 'api_ping'
-
-  namespace :api do
+  namespace :api, defaults: { format: :json } do
     resource :authentication, only: :create
     resource :me, only: %i[show update], controller: 'me'
     resources :users, except: %i[new edit]
