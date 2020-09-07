@@ -9,5 +9,7 @@ export default (state = initialState, action) => {
       };
     default:
       return state;
+    // TODO: As part of this reducer I also need to fill other data related to the user
+    // such as name and the role
   }
 }

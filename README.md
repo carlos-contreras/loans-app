@@ -13,3 +13,4 @@
 - `bundle install`
 - `bundle exec rails db:setup`
 - `bundle exec rails s`
+- Check all `TODO:` comments
